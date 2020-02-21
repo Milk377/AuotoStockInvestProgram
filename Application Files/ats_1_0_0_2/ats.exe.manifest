@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ats.exe" version="1.0.0.2" publicKeyToken="b36f44bbd99fd6fb" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ats" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ats.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 바꾸세요.
+
+          <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+          <requestedExecutionLevel level="requireAdministrator" uiAccess="false" />
+          <requestedExecutionLevel level="highestAvailable" uiAccess="false" />
+
+          이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+          requestedExecutionLevel 노드를 삭제하세요.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ats.exe" size="62424">
+      <assemblyIdentity name="ats" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Qa3SRD/zmxq+WIS/qa/4r878xtaODXRs8OZM35j68Uo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.KHOpenAPILib.dll" size="20480">
+      <assemblyIdentity name="AxInterop.KHOpenAPILib" version="1.2.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>TZikFS8EoWj4pTronmaKpII4Le/lmfWgcvvHSv/d/Kg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.KHOpenAPILib.dll" size="22016">
+      <assemblyIdentity name="Interop.KHOpenAPILib" version="1.2.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>p/vKTLqulUBraPi91VxxcqMuLLxvEUdfIiy8AxGovDQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Oracle.ManagedDataAccess.dll" size="5005824">
+      <assemblyIdentity name="Oracle.ManagedDataAccess" version="4.122.19.1" publicKeyToken="89B483F429C47342" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8pLszBbaw1SzIyewQiosKI9OCXEMmUlpEPdMiRgjiqU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ats.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-7F9CGLS\user" issuerKeyHash="408b821f53a20697e1995f3928384c6b387851a4" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>yhPzlO6G6e8XMVllWGbsRMogX4v6t5NrEljqJwfV4QY=</DigestValue></Reference></SignedInfo><SignatureValue>I2/oO3apGi6SAnI727SvpOw5hnvS9wnZepPTYM0EXASHMPVQyYiirYY3k08lXyAYA7vmhQgl8ZfyXLndDx5anC9dyPNXHM84nZLCnaUiTUdowco/O4sHQSRZwZ00vwN7+5RQQqJsUjpKW6O+lC3t3D5EeGLXu+D9zY4A072wuLY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>m0ErXxr0HsD6uJZoElESCyWsrYXjtzh+dgVflObW71qmLNOirrbNadS2QQOM7JoqU/d9bdy9RD5bkMuUa9dLsLXwNvgPGI4/TEMDokQE1RnNANvUjvXhV2bz+1B0EPIaTLdvfXUBvjDgfEkAGgaPQNDhpXomkd0F8/0gMBKUOvU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="06e1d50727ea58126b93b7fa8b5f20ca44ec665865593117efe986ee94f313ca" Description="" Url=""><as:assemblyIdentity name="ats.exe" version="1.0.0.2" publicKeyToken="b36f44bbd99fd6fb" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-7F9CGLS\user</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>/OsXb8ZrXjEu8HV3GeS+0bukr6tiIzhIWOXPFbbnOOo=</DigestValue></Reference></SignedInfo><SignatureValue>kKDJlbHh7ZVyMTx+shrsbFouqpmyOMMV/wS3ucqBsWUwfcYzoe5mUFeaNQHmipDETWBJIDJSadopy95ds7/JrVOhPoXFYMAyL/XGxsosR2GKSlp+BSADek38sm030o3lzHZgeTQEhEunakdbQ8md/8kAQtATwxsYiPDYvDMhRhc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>m0ErXxr0HsD6uJZoElESCyWsrYXjtzh+dgVflObW71qmLNOirrbNadS2QQOM7JoqU/d9bdy9RD5bkMuUa9dLsLXwNvgPGI4/TEMDokQE1RnNANvUjvXhV2bz+1B0EPIaTLdvfXUBvjDgfEkAGgaPQNDhpXomkd0F8/0gMBKUOvU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQT2VfZJWOk55BWp3zS0DJETANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtADcARgA5AEMARwBMAFMAXAB1AHMAZQByMB4XDTIwMDIyMDEyMjEzOFoXDTIxMDIxOTE4MjEzOFowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQA3AEYAOQBDAEcATABTAFwAdQBzAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAm0ErXxr0HsD6uJZoElESCyWsrYXjtzh+dgVflObW71qmLNOirrbNadS2QQOM7JoqU/d9bdy9RD5bkMuUa9dLsLXwNvgPGI4/TEMDokQE1RnNANvUjvXhV2bz+1B0EPIaTLdvfXUBvjDgfEkAGgaPQNDhpXomkd0F8/0gMBKUOvUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAei5/+z2QSMAC7geW3oYmNFOc/Ar/hbi7Japh6PbkcRPfIvvN3/WNuD7nLnWqyEUOsIN+UGu4bJDw03m1HPSvZRXPbq3OKeHMhUqqQUD/0UsHodUfWGcmxlglkJ7s44Dt05Ul+ChY6Glev4Lxu1r80pyFD8irkrJA9xCM8yAMPmw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
